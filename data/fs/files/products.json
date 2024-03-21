@@ -1,0 +1,82 @@
+[
+  {
+    "id": "9956716a90bc94476a63d710",
+    "title": "Ryzen",
+    "photo": "ryzen.jpg",
+    "category": "CPU",
+    "price": 10,
+    "stock": 100
+  },
+  {
+    "id": "ea10ad3c3b78f1b1cd89fd5a",
+    "title": "Motherboard",
+    "photo": "mother.jpg",
+    "category": "Motherboards",
+    "price": 10,
+    "stock": 100
+  },
+  {
+    "id": "414a05327e628ec66d4c2cf5",
+    "title": "Memory Ram",
+    "photo": "ram.jpg",
+    "category": "RAM",
+    "price": 10,
+    "stock": 100
+  },
+  {
+    "id": "78c97a35ee171880c16f2c93",
+    "title": "Nvidia 3080",
+    "photo": "nvidia.jpg",
+    "category": "Tarjetas grafica",
+    "price": 10,
+    "stock": 100
+  },
+  {
+    "id": "003ff19105438985078e2962",
+    "title": "Fuente de 600w",
+    "photo": "fuentedepoder.jpg",
+    "category": "Fuentes de Poder",
+    "price": 10,
+    "stock": 100
+  },
+  {
+    "id": "85392955eced305591db2569",
+    "title": "Gabinete CoolerMaster",
+    "photo": "gabinete.jpg",
+    "category": "Gbinetes",
+    "price": 10,
+    "stock": 100
+  },
+  {
+    "id": "efbb4ce7d8bb122b66c25bd1",
+    "title": "Tecldo HyperX",
+    "photo": "tecladomecanico.jpg",
+    "category": "Teclados",
+    "price": 10,
+    "stock": 100
+  },
+  {
+    "id": "d6f1a837c5935305a32e851a",
+    "title": "Mouse HyperX",
+    "photo": "mouse.jpg",
+    "category": "Mouses",
+    "price": 10,
+    "stock": 100
+  },
+  {
+    "id": "00a1414e3f4fa900bba3cc4a",
+    "title": "Auriculares HyperX",
+    "photo": "auriculares.jpg",
+    "category": "Auriculres",
+    "price": 10,
+    "stock": 100
+  },
+  {
+    "id": "09d4beb8eb1c56af5983e408",
+    "title": "Monitor Samsung",
+    "photo": "monitor.jpg",
+    "category": "Monitores",
+    "price": 10,
+    "stock": 100
+  }
+]
