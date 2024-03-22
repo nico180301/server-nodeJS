@@ -41,21 +41,7 @@ class ProductManager {
         }
 
     }
-    // async read(category = "all" ) {
-    //     try {
-    //         let products = await fs.promises.readFile(this.path, "utf-8");
-    //         products = JSON.parse(products);
-    //         products = products.filter(each => each.category === category)
-    //         //if (!products) {
-    //         if(products.length === 0){
-    //             new Error("Error en la lectura del array");
-    //         } else {
-    //             return products;
-    //         }
-    //     } catch (error) {
-    //         console.log(error);
-    //     }
-    // }
+
 
     async read(category = null) {
         try {
