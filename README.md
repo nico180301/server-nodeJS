@@ -1,25 +1,41 @@
 # server-nodeJS
+
 En este repositorio se creará un servidor de NodeJS
 
 Para poder ver el repositorio clonar el siguiente link https://github.com/nico180301/server-nodeJS.git
-Y usar los comandos por consola 
+Y usar los comandos por consola
 git clone https://github.com/nico180301/server-nodeJS.git
 
-El cual te va  traer todo los archivos que muestra en el repositorio.
+El cual te va traer todo los archivos que muestra en el repositorio.
 
+Entrega de la semana 3:
+Para este tercer entregable, se siguieron los ejemplos y consignas indicadas en clase por el profesor.
 
-Entrega de la semana 2:
+Dependencias
+Este proyecto utiliza las siguientes dependencias:
 
-Para este segundo entregable, se siguieron los ejemplos y consignas indicadas en clase por el profesor.
+Express: Framework de Node.js para crear servidores web.
+Nodemon: Herramienta de desarrollo que reinicia automáticamente el servidor cuando detecta cambios en los archivos.
 
-Se crearon las clases ProductManager y UserManager para gestionar el conjunto de productos y usuarios, respectivamente.
+Scripts
+Se han definido dos scripts en el archivo package.json:
 
-Se utilizó file system con try catch y condicionales.
+start: Inicia el servidor en modo de producción.
+dev: Inicia el servidor en modo de desarrollo con Nodemon, reiniciándolo automáticamente al detectar cambios en los archivos.
+Para iniciar el servidor en modo de desarrollo, puedes ejecutar el siguiente comando: npm run dev
 
-Se ha trabajado activamente con la consola utilizando git para el control de cambios y manejo de ramas.
+Archivos JSON
+Se han creado archivos JSON en la carpeta files para almacenar datos relacionados con usuarios y productos.
 
-A los fines de ejecutar el código, debe ingresarse desde la consola en entorno de node.js a los archivos deseados.
+Uso del servidor
+El servidor responde a las siguientes rutas:
 
-Se estableció que ciertos los campos fueran obligatorios mediante el uso en grupo de las condiciones (OR) para que, cuando una no se cumpla, por consola nos indique que el producto no se ha creado y no se incorpore al array correspondiente.
+Usuarios
+Para consultar usuarios por rol, puedes utilizar la siguiente URL:
+http://localhost:8080/api/users?role=admin o http://localhost:8080/api/users?role=user
 
-Se crean archivos JSON en la carpeta files.
+Productos
+Para consultar productos por categoría, puedes utilizar la siguiente URL:
+http://localhost:8080/api/products?category=nombre_categoria
+
+Reemplaza nombre_categoria por la categoría deseada.

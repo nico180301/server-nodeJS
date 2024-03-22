@@ -1,5 +1,5 @@
-const fs = require("fs");
-const crypto = require("crypto");
+import fs from "fs";
+import crypto from "crypto";
 
 class UserManager {
     constructor() {
@@ -23,7 +23,7 @@ class UserManager {
                 photo: data.photo || "https:orpomixnds.sfo3.digitaloceanspaces.com/user.jpg",
                 email: data.email,
                 password: data.password,
-                role: 0,
+                role: data.role,
             };
             if (!data.email || !data.password || !data.role) {
                 console.log("Usuar no registrado. Ingrese todos los datos para crear un usuario. ");
@@ -39,17 +39,23 @@ class UserManager {
             console.log(error);
         }
     }
-    async read() {
+
+    async read(role = null) {
         try {
             let users = await fs.promises.readFile(this.path, "utf-8");
             users = JSON.parse(users);
-            if (!users) {
-                new Error("Error en la lectura del array");
-            } else {
+            
+            // Si no se proporciona un rol, devuelve todos los usuarios
+            if (!role) {
                 return users;
+            } else {
+                // Si se proporciona un rol, filtra los usuarios por ese rol
+                const filteredUsers = users.filter(each => each.role === role);
+                return filteredUsers;
             }
         } catch (error) {
             console.log(error);
+            throw error;
         }
     }
 
@@ -57,7 +63,7 @@ class UserManager {
         try {
             let users = await fs.promises.readFile(this.path, "utf-8");
             users = JSON.parse(users);
-            const user = users.find((each) => each.id === id);
+            let user = users.find((each) => each.id === id);
             if (!user) {
                 throw new Error("NO EXISTE EL USUARIO.");
             }
@@ -86,41 +92,44 @@ class UserManager {
 
 }
 
-async function test() {
-    const usuarios = new UserManager();
-    await usuarios.create({
-        photo: "nico.jpg",
-        email: "nico@gmail.com",
-        password: "hola1234",
-        role: "admin",
-    });
+// async function test() {
+//     const usuarios = new UserManager();
+//     await usuarios.create({
+//         photo: "nico.jpg",
+//         email: "nico@gmail.com",
+//         password: "hola1234",
+//         role: "admin",
+//     });
 
-    await usuarios.create({
-        photo: "facu.jpg",
-        email: "facu@gmail.com",
-        password: "facu1234",
-        role: "user",
-    });
+//     await usuarios.create({
+//         photo: "facu.jpg",
+//         email: "facu@gmail.com",
+//         password: "facu1234",
+//         role: "user",
+//     });
 
-    await usuarios.create({
-        photo: "leo.jpg",
-        email: "leo@gmail.com",
-        password: "leo1234",
-        role: "user",
-    });
+//     await usuarios.create({
+//         photo: "leo.jpg",
+//         email: "leo@gmail.com",
+//         password: "leo1234",
+//         role: "user",
+//     });
 
-    await usuarios.create({
-        photo: "rodri.jpg",
-        email: "rodri@gmail.com",
-        password: "rodri1234",
-        role: "user",
-    });
-    
+//     await usuarios.create({
+//         photo: "rodri.jpg",
+//         email: "rodri@gmail.com",
+//         password: "rodri1234",
+//         role: "user",
+//     });
 
-    console.log(await usuarios.read()); 
-    console.log(await usuarios.readOne());
-    console.log(await usuarios.destroy());
 
-}
+//     console.log(await usuarios.read());
+//     console.log(await usuarios.readOne());
+//     console.log(await usuarios.destroy());
 
-test();
+// }
+
+// test();
+
+const userManager = new UserManager()
+export default userManager

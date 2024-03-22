@@ -1,6 +1,6 @@
 [
   {
-    "id": "9956716a90bc94476a63d710",
+    "id": "6d398f27fd5dd3b2043d828e",
     "title": "Ryzen",
     "photo": "ryzen.jpg",
     "category": "CPU",
@@ -8,73 +8,153 @@
     "stock": 100
   },
   {
-    "id": "ea10ad3c3b78f1b1cd89fd5a",
-    "title": "Motherboard",
-    "photo": "mother.jpg",
+    "id": "152b5132d13ca29615f7a45f",
+    "title": "Intel",
+    "photo": "intel.jpg",
+    "category": "CPU",
+    "price": 10,
+    "stock": 100
+  },
+  {
+    "id": "233b8ce83bc5ab1153227498",
+    "title": "Motherboard Asus",
+    "photo": "motherAsus.jpg",
     "category": "Motherboards",
     "price": 10,
     "stock": 100
   },
   {
-    "id": "414a05327e628ec66d4c2cf5",
-    "title": "Memory Ram",
-    "photo": "ram.jpg",
+    "id": "b97517564f975b94a2d4ab87",
+    "title": "Motherboard Gigabyte",
+    "photo": "motherGigabyte.jpg",
+    "category": "Motherboards",
+    "price": 10,
+    "stock": 100
+  },
+  {
+    "id": "18a43190f8b5a3011369a8d4",
+    "title": "Memory Ram HyperX",
+    "photo": "ramHyperX.jpg",
     "category": "RAM",
     "price": 10,
     "stock": 100
   },
   {
-    "id": "78c97a35ee171880c16f2c93",
+    "id": "a0ad93976316cd0720759db8",
+    "title": "Memory Ram Corsair",
+    "photo": "ramCorsair.jpg",
+    "category": "RAM",
+    "price": 10,
+    "stock": 100
+  },
+  {
+    "id": "e3dd3e95a92291c56e2dc596",
     "title": "Nvidia 3080",
-    "photo": "nvidia.jpg",
+    "photo": "nvidia3080.jpg",
     "category": "Tarjetas grafica",
     "price": 10,
     "stock": 100
   },
   {
-    "id": "003ff19105438985078e2962",
-    "title": "Fuente de 600w",
-    "photo": "fuentedepoder.jpg",
+    "id": "ea99344f86c319ee3bcb6faf",
+    "title": "Nvidia 3090",
+    "photo": "nvidia3090.jpg",
+    "category": "Tarjetas grafica",
+    "price": 10,
+    "stock": 100
+  },
+  {
+    "id": "d77b7c77acbcdc459164d1bd",
+    "title": "Fuente XPG de 850w",
+    "photo": "fuentedepoderXPG.jpg",
     "category": "Fuentes de Poder",
     "price": 10,
     "stock": 100
   },
   {
-    "id": "85392955eced305591db2569",
+    "id": "065019c95637d7487b5bbee0",
+    "title": "Fuente Corsair de 1000w",
+    "photo": "fuentedepoderCorsair.jpg",
+    "category": "Fuentes de Poder",
+    "price": 10,
+    "stock": 100
+  },
+  {
+    "id": "7abfd1bdeea840e1210a54d3",
     "title": "Gabinete CoolerMaster",
-    "photo": "gabinete.jpg",
+    "photo": "gabineteCoolerMaster.jpg",
     "category": "Gbinetes",
     "price": 10,
     "stock": 100
   },
   {
-    "id": "efbb4ce7d8bb122b66c25bd1",
+    "id": "a40c38c77230dbacba6fe1db",
+    "title": "Gabinete Corsair",
+    "photo": "gabineteCorsair.jpg",
+    "category": "Gbinetes",
+    "price": 10,
+    "stock": 100
+  },
+  {
+    "id": "e771bf908197d22d98dbddad",
     "title": "Tecldo HyperX",
-    "photo": "tecladomecanico.jpg",
+    "photo": "tecladomecanicoHyperX.jpg",
     "category": "Teclados",
     "price": 10,
     "stock": 100
   },
   {
-    "id": "d6f1a837c5935305a32e851a",
+    "id": "e7374f19d7366d3fb929aee0",
+    "title": "Tecldo Logitech",
+    "photo": "tecladomecanicoLogitech.jpg",
+    "category": "Teclados",
+    "price": 10,
+    "stock": 100
+  },
+  {
+    "id": "c14aad62fb35d0c1e6a82155",
     "title": "Mouse HyperX",
-    "photo": "mouse.jpg",
+    "photo": "mouseHyperX.jpg",
     "category": "Mouses",
     "price": 10,
     "stock": 100
   },
   {
-    "id": "00a1414e3f4fa900bba3cc4a",
+    "id": "13f1a9d2c0ca136ea476a06a",
+    "title": "Mouse Logitech",
+    "photo": "mouseLogitech.jpg",
+    "category": "Mouses",
+    "price": 10,
+    "stock": 100
+  },
+  {
+    "id": "b733149077118a2ee16b386a",
     "title": "Auriculares HyperX",
-    "photo": "auriculares.jpg",
+    "photo": "auricularesHyperX.jpg",
     "category": "Auriculres",
     "price": 10,
     "stock": 100
   },
   {
-    "id": "09d4beb8eb1c56af5983e408",
+    "id": "ae04910b4282979d56d06c34",
+    "title": "Auriculares Logitech",
+    "photo": "auricularesLogitech.jpg",
+    "category": "Auriculres",
+    "price": 10,
+    "stock": 100
+  },
+  {
+    "id": "b48f3ba1deb1f52a1bcc9bb9",
     "title": "Monitor Samsung",
-    "photo": "monitor.jpg",
+    "photo": "monitorSamsung.jpg",
+    "category": "Monitores",
+    "price": 10,
+    "stock": 100
+  },
+  {
+    "id": "0d6234faf8913a62c8fb542b",
+    "title": "Monitor LG",
+    "photo": "monitorLG.jpg",
     "category": "Monitores",
     "price": 10,
     "stock": 100
