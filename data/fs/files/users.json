@@ -1,30 +1,30 @@
 [
   {
-    "id": "632140b019a59253eba90f41",
+    "id": "19e0900798ec72e21f6e9938",
     "photo": "nico.jpg",
     "email": "nico@gmail.com",
     "password": "hola1234",
-    "role": 0
+    "role": "admin"
   },
   {
-    "id": "15c0779ce7742713610a5599",
+    "id": "63107c451814e67c4777ab66",
     "photo": "facu.jpg",
     "email": "facu@gmail.com",
     "password": "facu1234",
-    "role": 0
+    "role": "user"
   },
   {
-    "id": "ac14dd143bea139e93494c5f",
+    "id": "084c5ded8a06ca10d55d6aca",
     "photo": "leo.jpg",
     "email": "leo@gmail.com",
     "password": "leo1234",
-    "role": 0
+    "role": "user"
   },
   {
-    "id": "00265608377142ae0efb02ab",
+    "id": "5b69dc6f4199d25eae324b5b",
     "photo": "rodri.jpg",
     "email": "rodri@gmail.com",
     "password": "rodri1234",
-    "role": 0
+    "role": "user"
   }
 ]
